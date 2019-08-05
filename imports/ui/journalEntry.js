@@ -1,0 +1,2 @@
+import './journalEntry.html';
+

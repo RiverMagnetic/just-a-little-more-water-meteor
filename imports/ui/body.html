@@ -1,0 +1,33 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Just Add Water</h1>
+    </header>
+    <section id="all-entries">
+      <section id="todays-entry" class="entry">
+        
+        <!-- CREATE/UPDATE JOURNAL ENTRY BEGINS -->
+        <article class="todays-entry">
+          <h2 id="date"></h2>
+          <form id="js-create-journal-entry">
+            <input type="text" name="text" id="js-journal-entry" placeholder="how are you feeling?" />
+          </form>
+        </article>
+        <!-- END CREATE/UPDATE JOURNAL ENTRY -->
+
+        <!-- SHOW PREVIOUS ENTRIES -->
+        <article class="entry">
+          <section id="previous-entries" class="previous-entries-class">
+            <ul>
+              {{#each journalEntries}}
+                {{> journalEntry}}
+              {{/each}}
+            </ul>
+          </section>
+        </article>
+        <!-- END SHOW PREVIOUS ENTRIES -->
+
+      </section>
+    </section>
+  </div>
+</body>
